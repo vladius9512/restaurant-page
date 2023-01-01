@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.header {
+    background-image: url("../images/pizza.jpg");
+    min-width: 100vw;
+    background-size: cover;
+    background-position: 0% 30%;
+    min-height: 30vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.menu {
+    display:flex;
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color:#ebedef;
+}
+
+li {
+    padding: 10px;
+}
+
+.info {
+    min-width: 70vw;
+    background-color: #ffa66f;
+    min-height: 65vh;
+}
