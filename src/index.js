@@ -1,11 +1,6 @@
 import _ from 'lodash';
+import startWebsite from './menu';
 
-function component() {
-    const element = document.createElement('div');
 
-    console.log('merge');
 
-    return element;
-}
-
-document.body.appendChild(component());
+startWebsite();

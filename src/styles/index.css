@@ -39,8 +39,22 @@ li {
     padding: 10px;
 }
 
+li:hover {
+    color:#c4c7cf;
+    cursor: grab;
+}
+
 .info {
     min-width: 70vw;
     background-color: #ffa66f;
     min-height: 65vh;
+}
+
+.info.grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.info img {
+    width: 200px;
+    height: 200px;
 }
