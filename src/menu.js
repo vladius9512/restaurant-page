@@ -1,5 +1,8 @@
+import {resetInfo,infoMenu} from './menuPage';
 
-const content = document.querySelector('.content');
+export const content = document.querySelector('.content');
+console.log(content);
+
 
 const createElement = (elementType) => {
     return document.createElement(elementType);
@@ -12,11 +15,19 @@ const header = () => {
     ulElem.classList.add('menu');
     const liElem1 = document.createElement('li');
     liElem1.innerText = 'Home';
+    liElem1.addEventListener('click', () => {
+        resetInfo();
+        content.appendChild(infoHome());
+    })
     const liElem2 = document.createElement('li');
     liElem2.innerText = 'Menu';
+    liElem2.addEventListener('click', () => {
+        resetInfo();
+        infoMenu();
+    })
     const liElem3 = document.createElement('li');
     liElem3.innerText = 'Contact';
-
+    
     divElem.appendChild(ulElem);
     ulElem.appendChild(liElem1);
     ulElem.appendChild(liElem2);
@@ -48,11 +59,7 @@ const startWebsite = () =>{
     content.appendChild(footer());
 }
 
-/*const menuUl = document.querySelector('.menu');
 
-menuUl.addEventListener('click',(e) => {
-    const target = e.target;
-    console.log(target);
-})*/
+
 
 export default startWebsite;

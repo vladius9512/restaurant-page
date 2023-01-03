@@ -50,11 +50,13 @@ li:hover {
     min-height: 65vh;
 }
 
-.info.grid {
+.info-grid {
+    display:grid;
+    grid-template-rows: 50px auto;
     grid-template-columns: 1fr 1fr;
 }
 
-.info img {
+.info-grid img {
     width: 200px;
     height: 200px;
 }
