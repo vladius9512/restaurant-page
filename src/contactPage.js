@@ -1,17 +1,13 @@
-import content from "./menu";
+import { content } from "./menu";
 
 const createElement = (elementType) => {
     return document.createElement(elementType);
 };
 
-const resetInfo = () => {
-    return content.removeChild("info");
-};
-
-const infoMenu = () => {
+export const infoContact = () => {
     const divElem = createElement("div");
-    divElem.classList.add("info");
+    divElem.classList.add("info-contact");
     divElem.innerText = "Reach us here:";
 
-    content.appendChild(divElem);
+    content.children[1].appendChild(divElem);
 };

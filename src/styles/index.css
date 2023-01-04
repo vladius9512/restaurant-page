@@ -51,23 +51,61 @@ li {
 }
 
 li:hover {
-    color: #c4c7cf;
-    cursor: grab;
+    color: #57b894;
+    cursor: pointer;
+    font-size: 33px;
 }
 
 .info {
     min-width: 70vw;
-    background-color: #ffa66f;
+    max-width: 70vw;
     min-height: 65vh;
+    padding-top: 10px;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container img {
+    width: 500px;
+    height: 300px;
 }
 
 .info-grid-menu {
     display: grid;
     grid-template-columns: 200px 200px;
     gap: 1rem;
+    justify-content: center;
 }
 
 .info-grid-menu img {
     width: 200px;
     height: 200px;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #26272b;
+    font-size: 15px;
+    color: #ebedef;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img {
+    margin-left: 5px;
+}
+
+.footer img:hover {
+    fill: aliceblue;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
 }
