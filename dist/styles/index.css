@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.header {
+    background-image: url("../images/pizza.jpg");
+    min-width: 100vw;
+    background-size: cover;
+    background-position: 0% 30%;
+    min-height: 30vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.text-background {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.664));
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ebedef;
+    z-index: 1;
+}
+
+li {
+    padding: 10px;
+}
+
+li:hover {
+    color: #57b894;
+    cursor: pointer;
+    font-size: 33px;
+}
+
+.info {
+    min-width: 70vw;
+    max-width: 70vw;
+    min-height: 65vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.info-child {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.info-child img {
+    width: 500px;
+    height: 300px;
+    padding: 5px;
+}
+
+.info-grid-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.info-grid-menu img {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 225px;
+    max-height: 300px;
+}
+
+.info-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.info-contact a {
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ea5952;
+}
+
+.info-contact a:hover {
+    font-size: 28px;
+    color: #f6a943;
+}
+
+.info-contact button {
+    margin: 15px;
+    font-size: 25px;
+    border-style: none;
+    border-radius: 15px;
+    width: 250px;
+    height: 75px;
+    color: #ebedef;
+    font-weight: bold;
+    background-color: #26272b;
+}
+
+.info-contact button:hover {
+    background-color: #f6a943;
+    color: #26272b;
+    width: 270px;
+    height: 95px;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #26272b;
+    font-size: 15px;
+    color: #ebedef;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img {
+    margin-left: 5px;
+}
+
+.footer img:hover {
+    fill: aliceblue;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}

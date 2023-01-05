@@ -27,25 +27,25 @@ export const infoMenu = () => {
     const divElem = createElement("div");
     divElem.classList.add("info-grid-menu");
     generateMenuItem(
-        "../src/images/starter.jpg",
+        "./images/starter.jpg",
         "A tuna salad",
         "You came to our restaurant and don't know how to start? This is the option for you. You are eating at home? This tuna salad is the definition of healthy food.",
         divElem
     );
     generateMenuItem(
-        "../src/images/eggs.jpg",
+        "./images/eggs.jpg",
         "Eggs breakfast",
         "What can be so delicious about this eggs that everyone brags about? Well why don't you try it out and tell us. If you guess the secret incredient, the desert is on the house :)",
         divElem
     );
     generateMenuItem(
-        "../src/images/pizza.jpg",
+        "./images/pizza.jpg",
         "Pizza",
         "Pizza is love. What is more to say, we think the photo is convincing enough.",
         divElem
     );
     generateMenuItem(
-        "../src/images/desert.jpg",
+        "./images/desert.jpg",
         "Dessert",
         "Was the food already delicious? Migh as well try the desert.",
         divElem

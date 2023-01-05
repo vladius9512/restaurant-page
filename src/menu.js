@@ -64,10 +64,10 @@ const infoDiv = () => {
     pElem.innerText =
         "Welcome! Are you in for a great culinary experience? Our services are top. Want to test the validity of this statement? Grab your friends and test our food!";
     const imgElem = createElement("img");
-    imgElem.src = "../src/images/healthy-dinner.jpg";
+    imgElem.src = "./images/healthy-dinner.jpg";
     imgElem.alt = "Healthy-dinner";
     const imgElem2 = createElement("img");
-    imgElem2.src = "../src/images/fried-salmon.jpg";
+    imgElem2.src = "./images/fried-salmon.jpg";
     imgElem2.alt = "Fried salmon";
     const pElem2 = createElement("p");
     pElem2.innerText =
@@ -93,10 +93,10 @@ const infoHome = () => {
     pElem.innerText =
         "Welcome! Are you in for a great culinary experience? Our services are top. Want to test the validity of this statement? Grab your friends and test our food!";
     const imgElem = createElement("img");
-    imgElem.src = "../src/images/healthy-dinner.jpg";
+    imgElem.src = "./images/healthy-dinner.jpg";
     imgElem.alt = "Healthy-dinner";
     const imgElem2 = createElement("img");
-    imgElem2.src = "../src/images/fried-salmon.jpg";
+    imgElem2.src = "./images/fried-salmon.jpg";
     imgElem2.alt = "Fried salmon";
     const pElem2 = createElement("p");
     pElem2.innerText =
@@ -115,7 +115,7 @@ const footer = () => {
     divElem.classList.add("footer");
     divElem.innerText = "Created by vladius9512";
     const svgElem = createElement("img");
-    svgElem.src = "../src/images/github.svg";
+    svgElem.src = "./images/github.svg";
     svgElem.alt = "Github logo";
     const linkElem = createElement("a");
     linkElem.href = "https://github.com/vladius9512";
