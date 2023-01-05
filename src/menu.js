@@ -56,15 +56,28 @@ const infoDiv = () => {
     divElem.classList.add("info");
     const infoContainer = createElement("div");
     infoContainer.classList.add("info-container");
+    const divChild1 = createElement("div");
+    divChild1.classList.add("info-child");
+    const divChild2 = createElement("div");
+    divChild2.classList.add("info-child");
     const pElem = createElement("p");
     pElem.innerText =
         "Welcome! Are you in for a great culinary experience? Our services are top. Want to test the validity of this statement? Grab your friends and test our food!";
     const imgElem = createElement("img");
     imgElem.src = "../src/images/healthy-dinner.jpg";
     imgElem.alt = "Healthy-dinner";
-    infoContainer.appendChild(pElem);
-    infoContainer.appendChild(imgElem);
-
+    const imgElem2 = createElement("img");
+    imgElem2.src = "../src/images/fried-salmon.jpg";
+    imgElem2.alt = "Fried salmon";
+    const pElem2 = createElement("p");
+    pElem2.innerText =
+        "We also have a really good offer. If you come with friends, the drinks are 1+1. And if you can guess our daily riddles, the dessert is on us";
+    divChild1.appendChild(pElem);
+    divChild1.appendChild(imgElem);
+    divChild2.appendChild(imgElem2);
+    divChild2.appendChild(pElem2);
+    infoContainer.appendChild(divChild1);
+    infoContainer.appendChild(divChild2);
     divElem.appendChild(infoContainer);
     return divElem;
 };
@@ -72,14 +85,28 @@ const infoDiv = () => {
 const infoHome = () => {
     const infoContainer = createElement("div");
     infoContainer.classList.add("info-container");
+    const divChild1 = createElement("div");
+    divChild1.classList.add("info-child");
+    const divChild2 = createElement("div");
+    divChild2.classList.add("info-child");
     const pElem = createElement("p");
     pElem.innerText =
         "Welcome! Are you in for a great culinary experience? Our services are top. Want to test the validity of this statement? Grab your friends and test our food!";
     const imgElem = createElement("img");
     imgElem.src = "../src/images/healthy-dinner.jpg";
     imgElem.alt = "Healthy-dinner";
-    infoContainer.appendChild(pElem);
-    infoContainer.appendChild(imgElem);
+    const imgElem2 = createElement("img");
+    imgElem2.src = "../src/images/fried-salmon.jpg";
+    imgElem2.alt = "Fried salmon";
+    const pElem2 = createElement("p");
+    pElem2.innerText =
+        "We also have a really good offer. If you come with friends, the drinks are 1+1. And if you can guess our daily riddles, the dessert is on us";
+    divChild1.appendChild(pElem);
+    divChild1.appendChild(imgElem);
+    divChild2.appendChild(imgElem2);
+    divChild2.appendChild(pElem2);
+    infoContainer.appendChild(divChild1);
+    infoContainer.appendChild(divChild2);
     content.children[1].appendChild(infoContainer);
 };
 
